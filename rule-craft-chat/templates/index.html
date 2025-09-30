@@ -1,0 +1,33 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RuleCraft Chat — Rule-Based Web Chatbot</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">RuleCraft Chat</div>
+      <div class="controls">
+        <button id="themeToggle" class="btn">🌗</button>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div id="messages" class="messages"></div>
+
+      <div class="composer">
+        <input id="input" placeholder="Ask me anything — weather, jokes, facts, tech..." autocomplete="off"/>
+        <button id="sendBtn" class="send">Send</button>
+      </div>
+    </main>
+
+    <footer class="footer">Rule-based chatbot • Uses OpenWeather & Wikipedia for extra info</footer>
+  </div>
+
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>
